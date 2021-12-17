@@ -1,7 +1,7 @@
 {
   "name": "@banking-component/transaction-component",
   "private": true,
-  "version": "1.1.15",
+  "version": "1.1.16",
   "description": "Manage transactions",
   "repository": {
     "type": "git",
@@ -35,6 +35,7 @@
     "yarn": "^1.22.17"
   },
   "peerDependencies": {
+    "@banking-component/core": "https://github.com/101digital/banking-component-core.git",
     "react-native-svg": "^12.1.1",
     "react-native-theme-component": "https://github.com/101digital/react-native-theme-component.git"
   }

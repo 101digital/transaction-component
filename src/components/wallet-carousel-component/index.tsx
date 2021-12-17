@@ -8,7 +8,6 @@ import { CarouselItemStyle } from '../../types';
 import useMergeStyles from './styles';
 
 export type WalletCarouselItemProps = {
-  i18n?: any;
   wallet: Wallet;
   style?: CarouselItemStyle;
   tickIcon?: ReactNode;
@@ -35,10 +34,9 @@ const WalletCarouselComponent = (props: WalletCarouselItemProps) => {
     moneyOutLabel,
     formatCurrency,
     renderSummary,
-    i18n,
   } = props;
   const { getTransactionSummary } = useContext(TransactionContext);
-  const { colors } = useContext(ThemeContext);
+  const { colors, i18n } = useContext(ThemeContext);
   const summary = getTransactionSummary(wallet.walletId);
 
   const styles = useMergeStyles(style);
