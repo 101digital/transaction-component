@@ -2,6 +2,17 @@
 
 Manage transactions of linked wallets
 
+## Table Of Content
+
+- [Features](#features)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+  - [Assets And Multiple Languages](#assets-and-multiple-languages)
+- [API Reference](#api-reference)
+  - [TransactionService](#transactionservice)
+  - [TransactionContext](#transactioncontext)
+  - [TransactionComponent](#transactioncomponent)
+
 ## Features
 
 - Display aggregated wallet
@@ -110,10 +121,7 @@ export interface TransationContextData {
 
 ```javascript
 import { currencyFormatter } from '@/helpers/currency-formatter';
-import {
-  TransactionComponent,
-  TransactionContext,
-} from '@banking-component/transaction-component';
+import { TransactionComponent, TransactionContext } from '@banking-component/transaction-component';
 import { WalletContext } from '@banking-component/wallet-component';
 import { Wallet } from '@banking-component/core';
 import { AlertModal } from 'react-native-theme-component';
@@ -127,8 +135,7 @@ export type TransactionScreenParams = {
 const TransactionsScreen = ({ navigation, route }: TransactionScreenProps) => {
   const initWallet = route?.params?.wallet;
 
-  const { transactionError, clearTransactionError } =
-    useContext(TransactionContext);
+  const { transactionError, clearTransactionError } = useContext(TransactionContext);
   const { wallets, getAggregatedWallets } = useContext(WalletContext);
 
   const handleAddBankAccountPressed = () => {
@@ -163,7 +170,7 @@ const TransactionsScreen = ({ navigation, route }: TransactionScreenProps) => {
       <AlertModal
         isVisible={!isEmpty(transactionError?.toString())}
         title={i18n.t('common.lbl_oop')}
-        leftIcon={<FailedSvg width={18} height={18} fill="red" />}
+        leftIcon={<FailedSvg width={18} height={18} fill='red' />}
         onClose={clearTransactionError}
         onConfirmed={clearTransactionError}
         message={transactionError?.toString()}
