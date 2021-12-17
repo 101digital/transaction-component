@@ -7,6 +7,8 @@ Manage transactions of linked wallets
 - [Features](#features)
 - [Installation](#installation)
 - [Quick Start](#quick-start)
+  - [Init API Service](#init-api-service)
+  - [Init Component Provider](#init-component-provider)
   - [Assets And Multiple Languages](#assets-and-multiple-languages)
 - [API Reference](#api-reference)
   - [TransactionService](#transactionservice)
@@ -33,6 +35,8 @@ If have any issue while installing, can see [Issue While Installing Sub-Componen
 
 ## Quick Start
 
+### Init API Service
+
 - `TransactionService` is initiated should be from `App.ts`
 
 ```javascript
@@ -42,6 +46,8 @@ TransactionService.instance().initClients({
   walletClient: createAuthorizedApiClient(wallet), // Your Axios authorized client Wallet Url
 });
 ```
+
+### Init Component Provider
 
 - Wrapped the app with `TransactionProvider`
 
