@@ -1,7 +1,7 @@
 {
   "name": "@banking-component/transaction-component",
   "private": true,
-  "version": "1.1.14",
+  "version": "1.1.15",
   "description": "Manage transactions",
   "repository": {
     "type": "git",
@@ -21,19 +21,20 @@
     "react-native-snap-carousel": "^3.9.1"
   },
   "devDependencies": {
-    "@banking-component/core": "https://gitpkg.now.sh/101digital/react-native-banking-components/packages/core",
+    "@banking-component/core": "https://github.com/101digital/banking-component-core.git",
     "@types/react": "^17.0.20",
     "@types/react-native": "^0.65.0",
     "@types/react-native-snap-carousel": "^3.8.4",
+    "add": "^2.0.6",
     "moment": "^2.29.1",
     "react": "^17.0.2",
     "react-native": "^0.65.1",
     "react-native-svg": "^12.1.1",
     "react-native-theme-component": "https://github.com/101digital/react-native-theme-component.git",
-    "typescript": "^4.4.2"
+    "typescript": "^4.4.2",
+    "yarn": "^1.22.17"
   },
   "peerDependencies": {
-    "@banking-component/core": "https://gitpkg.now.sh/101digital/react-native-banking-components/packages/core",
     "react-native-svg": "^12.1.1",
     "react-native-theme-component": "https://github.com/101digital/react-native-theme-component.git"
   }

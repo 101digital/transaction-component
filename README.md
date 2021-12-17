@@ -23,7 +23,7 @@ Manage transactions of linked wallets
 Open a Terminal in your project's folder and run the command
 
 ```sh
-yarn add https://gitpkg.now.sh/101digital/react-native-banking-components/packages/transaction-component
+yarn add https://github.com/101digital/transaction-component.git
 ```
 
 - Installed [@banking-component/core](/packages/core)
