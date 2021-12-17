@@ -26,7 +26,7 @@ Open a Terminal in your project's folder and run the command
 yarn add https://github.com/101digital/transaction-component.git
 ```
 
-- Installed [@banking-component/core](/packages/core)
+- Installed [@banking-component/core](https://github.com/101digital/banking-component-core.git)
 - Installed [react-native-theme-component](https://github.com/101digital/react-native-theme-component.git)
 
 If have any issue while installing, can see [Issue While Installing Sub-Component](https://github.com/101digital/react-native-banking-components/blob/master/README.md)
