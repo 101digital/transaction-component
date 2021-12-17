@@ -5,8 +5,7 @@
   "description": "Manage transactions",
   "repository": {
     "type": "git",
-    "url": "https://github.com/101digital/react-native-banking-components.git",
-    "directory": "packages/transaction-component"
+    "url": "https://github.com/101digital/transaction-component.git"
   },
   "main": "index.js",
   "types": "index.d.ts",
